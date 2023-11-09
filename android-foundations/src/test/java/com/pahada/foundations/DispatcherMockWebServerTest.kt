@@ -4,6 +4,10 @@ import okhttp3.mockwebserver.Dispatcher
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.RecordedRequest
 
+/**
+ * For a map (URL -> response) based mocked webserver test, subclass this class
+ * and provide the map in [responseMap].
+ */
 abstract class DispatcherMockWebServerTest : MockWebServerTest() {
 
     abstract val responseMap: Map<String, MockedResponse>

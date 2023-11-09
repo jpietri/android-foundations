@@ -8,6 +8,10 @@ import org.junit.jupiter.api.BeforeEach
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
+/**
+ * [Mockwebserver](https://github.com/square/okhttp/tree/master/mockwebserver) based test superclass.
+ * See its subclass [DispatcherMockWebServerTest] to easily provide a set of predefined responses.
+ */
 abstract class MockWebServerTest : GerkhinTest() {
 
     protected val mockWebServer = MockWebServer()
