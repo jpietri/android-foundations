@@ -7,7 +7,7 @@ Android library for Whympr and Iphigenie Android applications.
 
 ## Publish
 - In `build.gradle`, bump the:
-  - version name (`android.defaultConfig.versionName`)
+  - version name (`android.defaultConfig.versionName`) (publish will fail if the version name already exists)
   - and code (`android.defaultConfig.versionCode`)
 
 - `./gradlew publish`
